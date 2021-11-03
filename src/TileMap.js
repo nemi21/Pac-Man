@@ -4,6 +4,7 @@ export default class TileMap{
     }
 
     draw(){
-        console.log("draw");
+        //console.log("draw");
+        
     }//end of draw
 }//end of export
