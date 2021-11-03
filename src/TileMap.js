@@ -23,7 +23,9 @@ export default class TileMap{
 
     draw(ctx){
         for(let row = 0; row < this.map.length; row++){
-            
+            for(let column = 0; column < this.map[row].length; column++){
+                
+            }
         }
 
     }//end of draw
