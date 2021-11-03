@@ -6,7 +6,9 @@ const ctx = canvas.getContext("2d");
 const tileMap = new TileMap(tileSize);
 
 function gameLoop(){
-    tileMap.draw();
+    tileMap.draw(ctx);
 }//end of function gameloop
+
+tileMap.setCanvasSize(canvas);
 
 setInterval(gameLoop, 1000 / 75);

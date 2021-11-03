@@ -22,7 +22,16 @@ export default class TileMap{
     ];
 
     draw(ctx){
-        
+        for(let row = 0; row < this.map.length; row++){
+            
+        }
 
     }//end of draw
+        
+        setCanvasSize(canvas) {
+        canvas.width = this.map[0].length * this.tileSize;
+        canvas.height = this.map.length * this.tileSize;
+        }
+
+    
 }//end of export
