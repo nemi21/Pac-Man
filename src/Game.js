@@ -1,4 +1,4 @@
-import TileMap from "./TileMap,js";
+import TileMap from "./TileMap.js";
 
 const tileSize = 32;
 const canvas = document.getElementById("gameCanvas");
@@ -10,5 +10,4 @@ function gameLoop(){
 }//end of function gameloop
 
 tileMap.setCanvasSize(canvas);
-
 setInterval(gameLoop, 1000 / 75);
