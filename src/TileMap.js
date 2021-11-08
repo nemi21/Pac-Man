@@ -34,10 +34,10 @@ export default class TileMap {
                 else if(tile === 0){
                     this.#drawDot(ctx, column, row, this.tileSize);
                 }//end of else if
-                
+
                 //visualize the each row
-                ctx.strokeStyle = "yellow";
-                ctx.strokeRect(column * this.tileSize, row * this.tileSize, this.tileSize, this.tileSize);
+               // ctx.strokeStyle = "yellow";
+               // ctx.strokeRect(column * this.tileSize, row * this.tileSize, this.tileSize, this.tileSize);
             }//end of for
 
         }//end of for
