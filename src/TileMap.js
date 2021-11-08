@@ -11,10 +11,14 @@ export default class TileMap {
         this.wall.src = "images/wall.png";
     }//end of constructor
 
+    //l-wall
+    //0-dots
+    //4-pacman
+
     //create the background for the wall
     map = [
         [1,1,1,1,1,1,1,1,1,1,1,1,1],
-        [1,0,0,0,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,4,0,0,0,0,0,0,0,1],
         [1,0,1,1,1,1,1,1,1,0,1,0,1],
         [1,0,1,0,0,0,0,0,0,0,1,0,1],
         [1,0,1,0,1,1,1,0,1,0,1,0,1],
