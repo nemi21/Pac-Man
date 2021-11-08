@@ -31,13 +31,21 @@ export default class TileMap {
                 if(tile === 1){
                     this.#drawWall(ctx, column, row, this.tileSize);
                 }//end of if
+                else if(tile === 0){
+                    this.#drawDot(ctx, column, row, this.tileSize);
+                }//end of else if
             }//end of for
+
         }//end of for
 
     }//end of draw
 
+    #drawDot(ctx, column, row, size){
+        ctx.drawImage(this.yellowDot, column * this.tileSize, row * this.tileSize, size, size);
+    }
+
     #drawWall(ctx, column, row, size){
-        ctx. drawImage(this.wall, column * this.tileSize, row * this.tileSize, size, size);
+        ctx.drawImage(this.wall, column * this.tileSize, row * this.tileSize, size, size);
     }
         
         setCanvasSize(canvas) {
