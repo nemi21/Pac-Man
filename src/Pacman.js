@@ -9,7 +9,9 @@ export default class Pacman {
     }
 
 
-draw(ctx) {}
+draw(ctx) {
+    ctx.drawImage(this.pacmanImages[this.pacmanImageIndex], this.x, this.y, this.tileSize, this.tileSize);
+}
 
     #loadPacmanImages() {
         const pacmanImage1 = new Image();
@@ -25,7 +27,7 @@ draw(ctx) {}
         pacmanImage4.src = "../images/pac1.png";
 
         this.pacmanImages = [pacmanImage1, pacmanImage2, pacmanImage3, pacmanImage4];
-        this.pacmanImageIndec = 0;
+        this.pacmanImageIndex = 0;
 
     }
 
