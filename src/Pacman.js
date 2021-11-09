@@ -1,3 +1,5 @@
+import MovingDirection from "./MovingDirection.js";
+
 export default class Pacman {
     constructor(x, y, tileSize, velocity, tileMap){
         this.x = x;
@@ -5,13 +7,24 @@ export default class Pacman {
         this.tileSize = tileSize;
         this.velocity = velocity;
         this.tileMap = tileMap;
+
+        this.currentMovingDirection = null;
+        this.requestMovingDirection = null;
+
+        document.addEventListener("keydown", this.#keydown)
         this.#loadPacmanImages();
     }
 
 
 draw(ctx) {
-    ctx.drawImage(this.pacmanImages[this.pacmanImageIndex], this.x, this.y, this.tileSize, this.tileSize);
-}
+    ctx.drawImage(
+        this.pacmanImages[this.pacmanImageIndex], 
+        this.x, 
+        this.y, 
+        this.tileSize, 
+        this.tileSize
+        );
+    }
 
     #loadPacmanImages() {
         const pacmanImage1 = new Image();
@@ -36,4 +49,22 @@ draw(ctx) {
 
     }
 
+    #keydown =(event)=>{
+        //up
+        if(event.keyCode == 38){
+
+        }
+        //down
+        if(event.keyCode == 40){
+
+        }
+        //left
+        if(event.keyCode == 37){
+
+        }
+        //right
+        if(event.keyCode == 39){
+            
+        }
+    }
 }
