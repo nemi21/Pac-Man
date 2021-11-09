@@ -52,7 +52,10 @@ draw(ctx) {
     #keydown =(event)=>{
         //up
         if(event.keyCode == 38){
-
+            if(this.currentMovingDirection == MovingDirection.down){
+                this.currentMovingDirection = MovingDirection.up;
+                this.requestMovingDirection = MovingDirection.up;
+            }
         }
         //down
         if(event.keyCode == 40){
@@ -64,7 +67,7 @@ draw(ctx) {
         }
         //right
         if(event.keyCode == 39){
-            
+
         }
     }
 }
