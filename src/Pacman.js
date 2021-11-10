@@ -17,6 +17,7 @@ export default class Pacman {
 
 
 draw(ctx) {
+    this.#move();
     ctx.drawImage(
         this.pacmanImages[this.pacmanImageIndex], 
         this.x, 
@@ -78,5 +79,9 @@ draw(ctx) {
                 this.requestMovingDirection = MovingDirection.right;
             }
         }
+    };
+
+    #move(){
+        
     }
 }
