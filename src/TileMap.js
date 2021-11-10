@@ -42,8 +42,8 @@ export default class TileMap {
                 }//end of else if
 
                 //visualize the each row
-               // ctx.strokeStyle = "yellow";
-               // ctx.strokeRect(column * this.tileSize, row * this.tileSize, this.tileSize, this.tileSize);
+                ctx.strokeStyle = "yellow";
+                ctx.strokeRect(column * this.tileSize, row * this.tileSize, this.tileSize, this.tileSize);
             }//end of for
 
         }//end of for
