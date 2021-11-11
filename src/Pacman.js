@@ -83,7 +83,7 @@ draw(ctx) {
 
     #move(){
          if(this.currentMovingDirection !== this.requestMovingDirection){
-             if(Number.isInteger(this.x / this.tileSize) && Number.isInteger(this.y/this.tileSize)){
+             if(Number.isInteger(this.x / this.tileSize) && Number.isInteger(this.y / this.tileSize)){
                  this.currentMovingDirection = this.requestMovingDirection;
              }
          }
