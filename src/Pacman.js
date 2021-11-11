@@ -91,6 +91,9 @@ draw(ctx) {
              case MovingDirection.up:
              this.y -= this.velocity;
              break;
+             case MovingDirection.down:
+                this.y += this.velocity;
+                break;
          }
     }
 }
